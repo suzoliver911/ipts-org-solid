@@ -1,25 +1,96 @@
 import type { Component } from 'solid-js';
 
-import logo from './logo.svg';
+import logo from './ipts-light-logo.svg';
+import hamburger from './menu1.svg';
+import twitter from './twitter.svg';
+import facebook from './facebook.svg';
+import instagram from './instagram.svg';
+import linkedin from './linkedin.svg';
 import styles from './App.module.css';
 
 const App: Component = () => {
   return (
     <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
+      <div class={styles.container}>
+        <div class={styles.header}>
+          <img src={logo} class={styles.logo} alt="logo" />
+          <div class={styles.menu}>
+            <a class={styles.selected}>HOME</a>
+            <a>ARTICLES</a>
+            <a>VIDEOS</a>
+            <a>ABOUT</a>
+            <a>CONTACT</a>
+          </div>
+          <div class={styles.mobile}>
+            <img src={hamburger} class={styles.icon} alt="menu" />
+          </div>
+        </div>
+        <div class={styles.content}>Put Some Content Here</div>
+      </div>
+      <footer>
+        <div class={styles.fbody}>
+          <div class={styles.links}>
+            {/* <img src={logo} class={styles.logo} alt="logo" /> */}
+            <h6>Quick Links</h6>
+            <ul class={styles.footlinks}>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Reserve Your Adventure</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class={styles.fform}>
+            <h6>Subscribe</h6>
+            <p>
+              Sign up to receive updates on Interplanetary Travel news,
+              announcements and travel deals.
+            </p>
+            <label for="submail">Email</label>
+            <input type="email" id="submail" />
+            <button type="button" id="subscribe">
+              Submit
+            </button>
+          </div>
+        </div>
+
+        <hr />
+        <div class={styles.theend}>
+          <p class={styles.copyright}>
+            Copyright &copy; 2023 All Rights Reserved by
+            <a href="#">Interplanetary Travel System</a>.
+          </p>
+          <ul class={styles.socialcons}>
+            <li>
+              <a class={styles.facebook} href="#">
+                <img src={facebook} alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a class={styles.twitter} href="#">
+                <img src={twitter} alt="twitter" />
+              </a>
+            </li>
+            <li>
+              <a class={styles.instagram} href="#">
+                <img src={instagram} alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a class={styles.linkedin} href="#">
+                <img src={linkedin} alt="linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   );
 };
