@@ -8,7 +8,7 @@ import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
 import placeholder from './astro-walk-placeholder.jpg';
-import herovid from './IPTS_Travel_1.mp4';
+import herovid from './IPTS_FC_4.mp4';
 import vid1 from './astronaut-walking-on-mars.mp4';
 
 const App: Component = () => {
@@ -29,7 +29,7 @@ const App: Component = () => {
           </div>
         </div>
         <div class={styles.content}>
-          <div id="hero">
+          <div class={styles.hero}>
             <video
               playsinline
               autoplay
@@ -40,15 +40,20 @@ const App: Component = () => {
               width="x"
               height="y"
             >
-              <source src={vid1} type="video/mp4" />
+              <source src={herovid} type="video/mp4" />
             </video>
           </div>
+        </div>
+        <div class={styles.news}>
+          <h6>News</h6>
+          <p>News content goes here</p>
+          <h6>Announcements</h6>
+          <p>Announcement content goes here </p>
         </div>
       </div>
       <footer>
         <div class={styles.fbody}>
           <div class={styles.links}>
-            {/* <img src={logo} class={styles.logo} alt="logo" /> */}
             <h6>Quick Links</h6>
             <ul class={styles.footlinks}>
               <li>
