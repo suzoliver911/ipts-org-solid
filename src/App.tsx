@@ -7,7 +7,7 @@ import twitter from './twitter.svg';
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
-import placeholder from './spaceship-cockpit.jpg';
+import placeholder from './astro-walk-placeholder.jpg';
 import herovid from './IPTS_Travel_1.mp4';
 
 const App: Component = () => {
