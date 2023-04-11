@@ -9,6 +9,10 @@ import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
 import placeholder from './spaceship-cockpit.jpg';
 import vid1 from './spaceship-cockpit.mp4';
+import vid2 from './astronaut-walking-on-an-mars.mp4';
+import vid3 from './camera-moving-through-some-planets.mp4';
+import vid4 from './intergalactic-travel.mp4';
+import vid5 from './flight-in-multidimensional-hyperspace.mp4';
 
 const App: Component = () => {
   return (
@@ -40,6 +44,8 @@ const App: Component = () => {
               height="y"
             >
               <source src={vid1} type="video/mp4" />
+              <source src={vid2} type="video/mp4" />
+              <source src={vid3} type="video/mp4" />
             </video>
           </div>
         </div>
