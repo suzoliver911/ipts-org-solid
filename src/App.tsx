@@ -1,4 +1,5 @@
 import type { Component } from 'solid-js';
+import styles from './App.module.css';
 
 import logo from './ipts-light-logo.svg';
 import hamburger from './menu1.svg';
@@ -6,7 +7,8 @@ import twitter from './twitter.svg';
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
-import styles from './App.module.css';
+import placeholder from './spaceship-cockpit.jpg';
+import vid1 from './spaceship-cockpit.mp4';
 
 const App: Component = () => {
   return (
@@ -25,7 +27,22 @@ const App: Component = () => {
             <img src={hamburger} class={styles.icon} alt="menu" />
           </div>
         </div>
-        <div class={styles.content}>Put Some Content Here</div>
+        <div class={styles.content}>
+          <div id="hero">
+            <video
+              playsinline
+              autoplay
+              muted
+              loop
+              poster={placeholder}
+              id="bgvideo"
+              width="x"
+              height="y"
+            >
+              <source src={vid1} type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </div>
       <footer>
         <div class={styles.fbody}>
