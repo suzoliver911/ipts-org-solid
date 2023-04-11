@@ -9,6 +9,7 @@ import instagram from './instagram.svg';
 import linkedin from './linkedin.svg';
 import placeholder from './astro-walk-placeholder.jpg';
 import herovid from './IPTS_Travel_1.mp4';
+import vid1 from './astronaut-walking-on-mars.mp4';
 
 const App: Component = () => {
   return (
@@ -39,7 +40,7 @@ const App: Component = () => {
               width="x"
               height="y"
             >
-              <source src={herovid} type="video/mp4" />
+              <source src={vid1} type="video/mp4" />
             </video>
           </div>
         </div>
