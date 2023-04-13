@@ -43,11 +43,17 @@ const App: Component = () => {
               <source src={herovid} type="video/mp4" />
             </video>
           </div>
+          <div class={styles.caption}>
+            <p>It is a big galaxy out there, go explore.</p>
+            <button type="button" id="explore" class={styles.light}>
+              Explore
+            </button>
+          </div>
         </div>
         <div class={styles.news}>
-          <h6>News</h6>
+          <h3>News</h3>
           <p>News content goes here</p>
-          <h6>Announcements</h6>
+          <h3>Announcements</h3>
           <p>Announcement content goes here </p>
         </div>
       </div>
